@@ -1,0 +1,243 @@
+:root {
+  /*--color-font-color: rgb(111, 111, 111);  main color */
+  --color-bg-color: #f4f4f4; /* main color */
+  --color-hover-color: #393939; /* main color */
+  --color-white-color: #ffffff; /* main color */
+  --color-green-color: rgb(47, 162, 8); /* main color */
+  --color-yellow-color: rgb(201, 188, 0); /* main color */
+  --color-red-color: rgb(171, 1, 1); /* main color */
+  --color-blue-color: rgb(0, 94, 188); /* main color */
+  --color-card-color: #007F8D;
+}
+
+/* Modal container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto; /* Set to auto for content-based height adjustment */
+  min-height: 100%; /* Ensure the modal covers the full screen if content is short */
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-content {
+  background-color: #000000;
+  color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid var(--color-card-color);
+  border-radius: 10px;
+  height: auto; /* Allows height to adjust dynamically */
+  max-height: 90vh; /* Optional: prevents content overflow */
+  overflow-y: auto; /* Adds scrolling if content exceeds the available space */
+}
+.modal-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%; /* Ensures full height for vertical centering */
+  gap: 10px;
+}
+
+#promptSuccess, #promptError {
+  color: var(--color-font-color);
+}
+#promptSuccessSM, #promptErrorSM {
+  color: var(--color-font-color);
+  font-weight: 500;
+}
+
+.modal-header {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px;
+}
+.modal-body {
+  font-size: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.modal-footer {
+  text-align: right;
+}
+.modal-xs {
+  width: 20%;
+}
+.modal-sm {
+  width: 30%;
+}
+.modal-md {
+  width: 50%;
+}
+.modal-lg {
+  width: 80%;
+}
+
+.device-location {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+.device-group {
+  display: flex;
+  gap: 12px;
+}
+.device-group > div {
+  flex: 1;
+}
+
+.device-location label {
+  display: inline-block;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+.device-location select, 
+.device-location input[type="text"] {
+  width: 100%;
+  padding: 5px;
+}
+
+
+/* modal password */
+.modal-password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  max-width: 100%; /* Responsive width */
+}
+.modal-password-container form {
+  width: 100%; /* Make inputs take full width of the card */
+}
+.password-wrapper input{
+  width: 100%;
+  font-size: 14px;
+  padding: 5px; /* Padding inside inputs */
+  border-radius: 3px; /* Rounded corners */
+  margin-bottom: 10px;
+}
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+/* Button Elements */
+/* button default */
+button {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--color-hover-color);
+  color: var(--color-white-color);
+}
+/* button color */
+.btn-color-white {
+  padding: 5px;
+  background-color: var(--color-white-color);
+  color: #000000;
+}
+.btn-color-green {
+  background-color: var(--color-green-color);
+  color: var(--color-white-color);
+}
+.btn-color-yellow {
+  background-color: var(--color-yellow-color);
+  color: var(--color-white-color);
+}
+.btn-color-red {
+  background-color: var(--color-red-color);
+  color: var(--color-white-color);
+}
+.btn-color-blue {
+  background-color: var(--color-card-color);
+  color: var(--color-white-color);
+}
+/* button sizes */
+.btn-large {
+  font-size: 20px;
+}
+.btn-medium {
+  font-size: 16px;
+}
+.btn-small {
+  font-size: 12px;
+}
+/* Design Space Elements */
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+
+
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-17 {
+  margin-top: 17px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+
+.pad3 {
+  padding: 3px;
+  background-color: var(--color-card-color);
+  color: var(--color-white-color);
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+/* Table Elements */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+}
+th {
+  color: var(--color-font-color);
+}
+td {
+  color: var(--color-display-color);
+}

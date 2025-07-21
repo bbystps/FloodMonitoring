@@ -1,0 +1,79 @@
+:root {
+  --color-font-color: #FFFFFF;
+  --color-background-color: #000000;
+  --color-card-color: #007F8D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-background-color);
+}
+
+.container-center {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.login-card {
+  background-color: var(--color-background-color);
+  height: auto;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid var(--color-card-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 40px;
+}
+.login-form {
+  width: 100%;
+}
+.login-title {
+  color: var(--color-font-color);
+  font-size: larger;
+}
+.login-field {
+  color: var(--color-font-color);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 3px;
+}
+
+.login-field label {
+  font-size: 14px;
+}
+.login-field input {
+  padding: 5px;
+  font-size: 12px;
+  border: none;
+  border-radius: 3px;
+}
+.login-field button {
+  font-size: 14px;
+  color: white;
+  background-color: var(--color-card-color);
+  border: 1px solid white;
+  border-radius: 3px;
+}
+.login-field button:hover {
+  background-color: var(--color-background-color);
+}
+
+@media only screen and (max-width: 550px) {
+  .login-card {
+    width: 90%;
+  }
+  
+}
