@@ -4,8 +4,8 @@ import sys
 
 broker = "3.27.210.100"
 port = 1883
-username = "mqtt"
-password = "ICPHmqtt!"
+username = "*****"
+password = "*****"
 client_id = "python_client_1"
 
 lwt_topic = "status/last_will"

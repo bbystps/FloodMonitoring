@@ -3,8 +3,8 @@ import paho.mqtt.client as mqtt
 # MQTT settings
 broker = "3.27.210.100"
 port = 1883
-username = "mqtt"
-password = "ICPHmqtt!"
+username = "*****"
+password = "*****"
 client_id = "python_client_2"
 
 # Status topic to listen to

@@ -16,8 +16,8 @@ def connect_to_db():
     try:
         conn = pymysql.connect(
             host='localhost',
-            user='root',
-            password='ICPHpass!',
+            user='*****',
+            password='*****',
             database='flood_monitoring')
         return conn
     except Exception as e:

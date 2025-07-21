@@ -8,8 +8,8 @@ import time
 # Connect to the MySQL database
 conn = pymysql.connect(
     host='localhost',
-    user='root',
-    password='',
+    user='*****',
+    password='*****',
     database='rht_monitoring'
 )
 
@@ -80,8 +80,8 @@ client.on_connect = on_connect
 client.on_message = on_message
 
 # Set username and password
-username = "mqtt"
-password = "ICPHmqtt!"
+username = "*****"
+password = "*****"
 client.username_pw_set(username, password)
 
 # Connect to the MQTT broker
